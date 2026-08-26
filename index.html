@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Pandey — Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Karan Pandey — AWS Cloud &amp; DevOps portfolio. VPC, EC2, S3, RDS, CloudFront, Docker, CI/CD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="nav__logo">KP<span class="dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#stack">Stack</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta">Get in touch</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">ap-south-1 &middot; Haldwani, Uttarakhand, IN</p>
+      <h1 class="hero__title">Karan Pandey</h1>
+      <p class="hero__role">Cloud &amp; DevOps Engineer <span class="cursor">_</span></p>
+      <p class="hero__desc">
+        BTech CSE student building production-style AWS architectures —
+        multi-AZ, cost-optimized, and monitored — then automating how they ship.
+        Currently deep in CI/CD pipelines, Terraform and Kubernetes.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="https://github.com/karan-pandey123" target="_blank" rel="noopener" class="btn btn--ghost">GitHub &nearr;</a>
+      </div>
+      <div class="hero__meta">
+        <span>kp3058757@gmail.com</span>
+        <span class="sep">/</span>
+        <span>+91-9045124426</span>
+      </div>
+    </div>
+
+    <div class="hero__diagram" role="img" aria-label="Diagram of a 3-tier AWS architecture: user traffic flows through CloudFront and an Application Load Balancer into an EC2 Auto Scaling group, which connects to a Multi-AZ RDS database.">
+      <svg viewBox="0 0 420 460" class="arch-svg" id="archSvg">
+        <path class="link" d="M60,40 L60,110" />
+        <path class="link" d="M60,150 L60,220" />
+        <path class="link" d="M60,260 L60,330" />
+        <path class="link link--branch" d="M60,330 C60,360 130,360 130,390" />
+        <path class="link link--branch" d="M60,330 C60,360 -10,360 -10,390" transform="translate(10,0)" />
+
+        <g class="node" transform="translate(20,10)">
+          <rect width="80" height="34" rx="6"/>
+          <text x="40" y="21">USER</text>
+        </g>
+        <g class="node node--edge" transform="translate(10,110)">
+          <rect width="100" height="40" rx="6"/>
+          <text x="50" y="24">CloudFront</text>
+        </g>
+        <g class="node node--compute" transform="translate(14,220)">
+          <rect width="92" height="40" rx="6"/>
+          <text x="46" y="24">ALB</text>
+        </g>
+        <g class="node node--compute" transform="translate(0,330)">
+          <rect width="120" height="46" rx="6"/>
+          <text x="60" y="21">EC2</text>
+          <text x="60" y="35" class="sub">Auto Scaling · 3 AZ</text>
+        </g>
+        <g class="node node--data" transform="translate(150,392)">
+          <rect width="110" height="46" rx="6"/>
+          <text x="55" y="21">RDS MySQL</text>
+          <text x="55" y="35" class="sub">Multi-AZ</text>
+        </g>
+        <g class="node node--data" transform="translate(-140,392)">
+          <rect width="100" height="46" rx="6"/>
+          <text x="50" y="21">S3</text>
+          <text x="50" y="35" class="sub">static assets</text>
+        </g>
+      </svg>
+      <p class="diagram__caption">live traffic flow — production 3-tier app</p>
+    </div>
+  </section>
+
+  <section class="stack reveal" id="stack">
+    <h2 class="section__title"><span class="section__num">stack</span> What I build with</h2>
+
+    <div class="stack__grid">
+      <div class="stack__group">
+        <h3>Cloud — AWS</h3>
+        <ul class="chips">
+          <li>VPC</li><li>EC2</li><li>S3</li><li>RDS (Multi-AZ)</li>
+          <li>Auto Scaling</li><li>ALB</li><li>CloudFront</li><li>Route 53</li>
+          <li>CloudWatch</li><li>SNS</li><li>IAM</li><li>SSM</li>
+          <li>CloudFormation</li><li>DynamoDB</li>
+        </ul>
+      </div>
+      <div class="stack__group">
+        <h3>DevOps &amp; Tools</h3>
+        <ul class="chips">
+          <li>Docker</li><li>Git / GitHub</li><li>Linux CLI</li><li>Bash</li>
+        </ul>
+      </div>
+      <div class="stack__group">
+        <h3>Currently learning</h3>
+        <ul class="chips chips--learning">
+          <li>Advanced Docker</li><li>CI/CD Pipelines</li><li>Terraform</li><li>Kubernetes</li>
+        </ul>
+      </div>
+      <div class="stack__group">
+        <h3>Languages &amp; Fundamentals</h3>
+        <ul class="chips">
+          <li>Python</li><li>Computer Networks</li><li>DBMS</li>
+          <li>Operating Systems</li><li>OOPs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects reveal" id="projects">
+    <h2 class="section__title"><span class="section__num">projects</span> Things I've shipped</h2>
+
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Production-Grade 3-Tier AWS Web Application</h3>
+          <span class="project__tag">cost-optimized</span>
+        </div>
+        <p class="project__desc">
+          Highly available 3-tier architecture spanning 3 Availability Zones, with dedicated
+          public, private and database subnets. Replaced NAT Gateways with S3 Gateway
+          &amp; SSM Interface Endpoints to cut monthly infra cost, and locked down the database
+          tier with least-privilege security groups.
+        </p>
+        <ul class="project__points">
+          <li>Auto Scaling Group behind an ALB for automated multi-AZ fault tolerance</li>
+          <li>RDS MySQL in Multi-AZ mode with automatic failover</li>
+          <li>Keyless EC2 management via SSM Session Manager</li>
+          <li>CloudWatch metrics, alarms &amp; SNS alerts — validated with live stress testing</li>
+        </ul>
+        <div class="project__foot">
+          <div class="project__stack">AWS · VPC · EC2 · ALB · Auto Scaling · RDS · S3 · CloudFront · CloudWatch · SNS · IAM · SSM · Route 53</div>
+          <a href="https://github.com/karan-pandey123" target="_blank" rel="noopener" class="project__link">GitHub Repo &nearr;</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Secure Static Web Hosting with Global CDN</h3>
+          <span class="project__tag">low latency</span>
+        </div>
+        <p class="project__desc">
+          Static site on S3, delivered globally over CloudFront with HTTPS. Origin
+          Access Control keeps the bucket private — every request must go through
+          CloudFront — with a custom domain routed via Route 53 and ACM-managed TLS.
+        </p>
+        <ul class="project__points">
+          <li>Origin Access Control (OAC) — no public S3 access</li>
+          <li>Custom domain routing through Route 53</li>
+          <li>ACM-issued certificate for HTTPS termination</li>
+        </ul>
+        <div class="project__foot">
+          <div class="project__stack">AWS S3 · CloudFront · Route 53 · IAM · ACM</div>
+          <a href="https://github.com/karan-pandey123" target="_blank" rel="noopener" class="project__link">GitHub Repo &nearr;</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Dockerized Web Application Deployment</h3>
+          <span class="project__tag">containerized</span>
+        </div>
+        <p class="project__desc">
+          Python web app containerized with a multi-stage Dockerfile to shrink image
+          size and build time, orchestrated with Docker Compose across an isolated
+          bridge network with persistent volumes for data integrity.
+        </p>
+        <ul class="project__points">
+          <li>Multi-stage builds for smaller, faster images</li>
+          <li>Multi-container orchestration via Docker Compose</li>
+          <li>Persistent volumes survive container restarts</li>
+        </ul>
+        <div class="project__foot">
+          <div class="project__stack">Docker · Docker Compose · Linux · Git · Python</div>
+          <a href="https://github.com/karan-pandey123" target="_blank" rel="noopener" class="project__link">GitHub Repo &nearr;</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="education reveal" id="education">
+    <h2 class="section__title"><span class="section__num">education</span> Background</h2>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <p class="edu-card__date">2023 — 2027</p>
+        <h3>Uttarakhand Technical University, Dehradun</h3>
+        <p>Bachelor of Technology — Computer Science &amp; Engineering</p>
+        <p class="edu-card__meta">CGPA 7.86</p>
+      </div>
+      <div class="edu-card">
+        <p class="edu-card__date">Uttarakhand Board of School Education</p>
+        <h3>Class XII — 86% &nbsp;·&nbsp; Class X — 84%</h3>
+      </div>
+      <div class="edu-card edu-card--cert">
+        <p class="edu-card__date">2025 — 2027</p>
+        <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer class="contact reveal" id="contact">
+    <h2 class="section__title"><span class="section__num">contact</span> Let's talk</h2>
+    <p class="contact__lead">Open to cloud engineering &amp; DevOps internship opportunities.</p>
+    <div class="contact__links">
+      <a href="mailto:kp3058757@gmail.com">kp3058757@gmail.com</a>
+      <a href="tel:+919045124426">+91-9045124426</a>
+      <a href="https://linkedin.com/in/karan-pandey-a632b539b" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/karan-pandey123" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="contact__foot">Haldwani, Uttarakhand, IN — built &amp; deployed via S3 + CloudFront, shipped with GitHub Actions.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
